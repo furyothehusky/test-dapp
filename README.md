@@ -3,7 +3,7 @@
 
 ## Description
 
-Dapp - Penalty is a front-end application for managing community tokens using static data to simulate interactions with smart contracts. The application facilitates a penalty game where users can propose token transfers from one user to another, and the transfers can be approved or rejected by other users.
+Dapp - Penalty is a front-end application for managing community tokens using static data to simulate interactions with smart contracts. The application facilitates a penalty dashboard where users can propose token transfers from one user to another, and the transfers can be approved or rejected by other users.
 
 ## Features
 
