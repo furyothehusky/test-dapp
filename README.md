@@ -1,46 +1,116 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Dapp - Penalty
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Dapp - Penalty is a front-end application for managing community tokens using static data to simulate interactions with smart contracts. The application facilitates a penalty game where users can propose token transfers from one user to another, and the transfers can be approved or rejected by other users.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **User Authentication**: Users can log in with a username and password.
+2. **Token Management Interface**: Community members can suggest token transfers from one user to another, approve or reject transfer requests, and view the status of transfer requests.
+3. **Business Rules**:
+   - Each user starts with an initial balance of 100 tokens.
+   - Users can suggest token transfers.
+   - Other members can approve or reject transfer requests.
+   - The user's balance is updated according to approved transfers.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React
+- TypeScript
+- Material UI
+- Jest and React Testing Library for unit testing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Setup
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com/furyothehusky/test-dapp.git
+cd dapp-penalty
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Install the dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+# or
+yarn install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running the Application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To start the development server:
 
-## Learn More
+```bash
+npm start
+# or
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will run the application in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running Tests
+
+To run the unit tests:
+
+```bash
+npm test
+# or
+yarn test
+```
+
+This will execute the tests using Jest and React Testing Library.
+
+## Directory Structure
+
+```
+src/
+|-- components/
+|   |-- Login.tsx
+|   |-- TokenTransferForm.tsx
+|   |-- UserProfile.tsx
+|-- context/
+|   |-- AuthContext.tsx
+|   |-- TokenContext.tsx
+|-- pages/
+|   |-- Dashboard.tsx
+|-- tests/
+|   |-- Login.test.tsx
+|   |-- TokenTransferForm.test.tsx
+|-- App.tsx
+|-- index.tsx
+```
+
+
+### Running the Application
+
+To start the development server:
+
+```bash
+npm start
+# or
+yarn start
+```
+
+This will run the application in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Running Tests
+
+To run the unit tests:
+
+```bash
+npm test
+# or
+yarn test
+```
+
+This will execute the tests using Jest and React Testing Library.
